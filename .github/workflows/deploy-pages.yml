@@ -28,9 +28,9 @@ jobs:
       - name: Build static site folder
         run: |
           mkdir -p dist/img
-          cp public/index.html dist/index.html
-          cp public/style.css dist/style.css
-          cp -r public/img/. dist/img
+          cp index.html dist/index.html
+          cp style.css dist/style.css
+          cp -r img/. dist/img
           touch dist/.nojekyll
 
       - name: Upload Pages artifact
